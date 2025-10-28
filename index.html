@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+    <header id="header">
+        <h1>Welcome to My Page</h1>
+        <p>Chan Rie's Engineering Lab</p>
+    </header>
+    <nav class="page-nav">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#play">Play</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Works -->
+        <section id="works">
+            <h2>Works</h2>
+            <div class="card-list">
+                <div class="card">
+                    <a href="https://lohaco.yahoo.co.jp/?srsltid=AfmBOorsve5I0zFHpGmurCPjguE9ERcBIe35qen_ipCqEGnxcJmIqOFv" target="_blank">
+                        <img src="./images/work_1.jpg" alt="ワーク１">
+                    </a>
+                    <div class="card-body">
+                        <h3>【大手通信販売会社】</h3>
+                        <p>LOHACO（ECサイト/B to C）の運用・更新を担当。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="https://www.premiumoutlets.co.jp/" target="_blank">
+                        <img src="./images/work_2.jpg" alt="ワーク２">
+                    </a>
+                    <div class="card-body">
+                        <h3>【Web制作会社】</h3>
+                        <p>大規模商業施設サイト専任としてコーディングを担当。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="https://www.ntt-bp.net/product/service/freewifi/index.html" target="_blank">
+                        <img src="./images/work_3.jpg" alt="ワーク３">
+                    </a>
+                    <div class="card-body">
+                        <h3>【情報・通信企業】</h3>
+                        <p>フリーWi-Fiアプリのポータル画面のコーディングを担当。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="https://www.mbga.jp/pc/html/sg_fm/index.html" target="_blank">
+                        <img src="./images/work_4.jpg" alt="ワーク4">
+                    </a>
+                    <div class="card-body">
+                        <h3>【ゲーム運営会社】</h3>
+                        <p>農園ホッコリーナというゲームのマークアップを担当。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="https://bigm2y.com/service/veeva/" target="_blank">
+                        <img src="./images/work_5.jpg" alt="ワーク5">
+                    </a>
+                    <div class="card-body">
+                        <h3>【医療・製薬系制作会社】</h3>
+                        <p>iPadコンテンツとEmailに特化した制作を担当。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Play -->
+        <section id="play">
+            <h2>Play</h2>
+            <div class="play-list">
+                <div class="play">
+                    <a href="./play/omikuji/index.html" target="_blank">
+                        <img src="./images/play_1.jpg" alt="work_1">
+                    </a>
+                    <p>【おみくじ】<br>
+                        HTML5、CSS3、JavaScript
+                    </p>
+                </div>
+                <div class="play">
+                    <a href="./play/quiz/index.html" target="_blank">
+                        <img src="./images/play_2.jpg" alt="work_2">
+                    </a>
+                    <p>【クイズ】<br>
+                        HTML5、CSS3、JavaScript                            
+                    </p>
+                </div>
+                <div class="play">
+                    <a href="./play/typing_game/index.html" target="_blank">
+                        <img src="./images/play_3.jpg" alt="work_3">
+                    </a>
+                    <p>【タイピングゲーム】<br>
+                        HTML5、CSS3、JavaScript
+                    </p>
+                </div>
+                <div class="play">
+                    <a href="http://localhost:8080" target="_blank">
+                        <img src="./images/play_4.jpg" alt="work_4">
+                    </a>
+                    <p>【挨拶アプリ】<br>
+                        HTML5、CSS3、Java(Spring Boot)<br> <span class="warning-text">※デモ停止中(要ローカル起動)</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="/thanks.html" name="contact" method="post" class="contact-form">
+                <input type="hidden" name="form-name" value="contact">
+
+                <label for="name">お名前
+                    <input type="text" id="name" name="name" required>
+                </label>
+                <label for="email">メール
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <div class="two-col">
+                    <label for="date">希望日
+                        <input type="date" id="date" name="date" required>
+                    </label>
+                    <label for="time">希望時間
+                        <input type="time" id="time" name="time" required>
+                    </label>
+                </div>
+                <label for="message">お問い合わせ内容
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                </label>
+
+                <button type="submit" class="btn">送信</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        © 2025 My Profile. All rights reserved.
+    </footer>
+</body>
+</html>
